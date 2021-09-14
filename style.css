@@ -4,9 +4,9 @@ h1 {
 }
 
 body {
-    border-color: blueviolet;
+    background-color: grey;
 }
 
-.teal-background {
-    border-color: teal;
+p {
+    background-color: cornflowerblue;
 }
