@@ -1,12 +1,23 @@
-h1 {
+header {
     text-align: center;
-    color: red;
-}
-
-body {
-    background-color: grey;
+    background-color: purple;
+    color: white;
+    margin: 0%;
+    padding: 100px;
+    height: 100%
 }
 
 p {
     background-color: cornflowerblue;
+}
+
+nav {
+    text-align: center;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    color: white;
 }
