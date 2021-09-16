@@ -1,12 +1,23 @@
-h1 {
+header {
     text-align: center;
-    color: red;
+    background-color: purple;
+    color: white;
+    margin: 0%;
+    padding: 100px;
+    height: 100%
 }
 
-body {
-    border-color: blueviolet;
+p {
+    background-color: cornflowerblue;
 }
 
-.teal-background {
-    border-color: teal;
+nav {
+    text-align: center;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    color: white;
 }
