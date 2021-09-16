@@ -1,23 +1,71 @@
-header {
-    text-align: center;
-    background-color: purple;
-    color: white;
-    margin: 0%;
-    padding: 100px;
-    height: 100%
+body{
+    background-color: grey;
 }
 
-p {
-    background-color: cornflowerblue;
+.index-header{
+    box-sizing: border-box;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(151, 1, 151);
+    color: white;
+    margin: 50px 0px 0px 0px;
+    padding: 100px;
+    height: 90vh;
+    width: 100vw;
+    border-radius: 25px;
+}
+
+.about-header {
+    background-color: rgb(151, 1, 151);
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.project-header{
+    background-color: rgb(151, 1, 151);
+    color: white;
+    text-align: center;
+    border-radius: 25px;
 }
 
 nav {
     text-align: center;
-    background-color: aquamarine;
+    background-color: grey;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 0px 10px 0px;
+}
+
+.button {
+    background-color: rgb(80,200,120);
+    color: white;
+    padding: 20px 50px;
+    flex: 1;
+    border-radius: 25px;
+    font-size: 25px;
+    margin: 0px 5px;
+    transition-duration: 0.6s;
+    border: 2px solid green;
+}
+
+.button:hover {
+    background-color: green; 
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.24);
+  }
+
+.projects-grid {
+    display: grid;
+    grid-template: 3 / 2;
+    grid-area: 
 }
 
 footer {
     color: white;
+    background-color: cornflowerblue;
+    border-radius: 25px;
+    text-align: center;
 }
+
