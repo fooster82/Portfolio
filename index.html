@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./style/index.js"></script>
+    <title>Robert Bristow</title>
 </head>
 <body>
-    <h1>Robert Bristow</h1>
-    <p>My name is Rob and I am 22. I have a degree in Mathematics from the Unviersity of Nottingham.</p>
-    <p>[FURTHER CONTENT COMING SOON]</p>
+    <nav> 
+        <input class="nav-button" type="button" onclick="location.href='index.html';" value="Home" />
+        <input class="nav-button" type="button" onclick="location.href='about.html';" value="About" />
+        <input class="nav-button" type="button" onclick="location.href='projects.html';" value="Projects" />
+        <input class="nav-button" type="button" onclick="location.href='#bottom';" value="Contact" />
+    </nav>
+    <main class="index-main">
+        <h1 id="index-header">Hi! My name is Rob Bristow and I'm currently training as a full stack developer with Futureproof...<span id="blinker">|</span></h1>
+    </main>
+ 
+    <footer id="bottom">
+        Get in touch: [EMAIL]<a href="https://www.linkedin.com/in/robert-bristow-850a4b215/">LinkedIn</a>
+    </footer>
 </body>
 </html>
    
