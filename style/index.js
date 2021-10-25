@@ -22,26 +22,20 @@ function changeNavSize() {
 const indexText = document.getElementById('index-text')
 const introText = "Hi! My name is Rob Bristow and I'm currently training as a full stack developer with Futureproof..."
 
-
-//ATTEMPT  1
-
-// window.onload = () => {
-//     for(i=0; i < introText.length; i++) {
-//         setTimeout(loadLetter(introText[i]), 300 + 300*i)
-//     }
-//     // append the blinker span and set it running
-// }
-
-
-//ATTEMPT 2
-const offset = 0;
+let time = 0;
 const arrayText = Array.from(introText);
-//offset doesn't like having 300 added to it (line 42)
-arrayText.forEach( a => {
-    setTimeout(loadLetter(a), 300 + offset);
-    offset += 300;
-});
+// Doesn't like the await on line 30.
+async function loadText() {
+    arrayText.forEach( a => {
+        await delay(time);
+        loadLetter(a);
+        time += 300;
+    })
+};
 
+delay = ms => {return new Promise(res => setTimeout(res, ms))} 
+
+loadText()
 
 function loadLetter(a) {
     indexText.textContent += a;
