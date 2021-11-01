@@ -18,40 +18,34 @@ function changeNavSize() {
 }
 
 
-// Type in the index.html main text
-const indexText = document.getElementById('index-text')
-const introText = "Hi! My name is Rob Bristow and I'm currently training as a full stack developer with Futureproof..."
+// // Type in the index.html main text
+// const indexText = document.getElementById('index-text')
+// const introText = "Hi! My name is Rob Bristow and I'm currently training as a full stack developer with Futureproof..."
 
+// let time = 0;
+// const arrayText = Array.from(introText);
+// // Doesn't like the await on line 30.
+// async function loadText() {
+//     arrayText.forEach( a => {
+//         await delay(time);
+//         loadLetter(a);
+//         time += 300;
+//     })
+// };
 
-//ATTEMPT  1
+// delay = ms => {return new Promise(res => setTimeout(res, ms))} 
 
-// window.onload = () => {
-//     for(i=0; i < introText.length; i++) {
-//         setTimeout(loadLetter(introText[i]), 300 + 300*i)
-//     }
-//     // append the blinker span and set it running
+// loadText()
+
+// function loadLetter(a) {
+//     indexText.textContent += a;
 // }
-
-
-//ATTEMPT 2
-const offset = 0;
-const arrayText = Array.from(introText);
-//offset doesn't like having 300 added to it (line 42)
-arrayText.forEach( a => {
-    setTimeout(loadLetter(a), 300 + offset);
-    offset += 300;
-});
-
-
-function loadLetter(a) {
-    indexText.textContent += a;
-}
 
 
 // Blinking cursor that shows on the main html page
 const blinker = document.getElementById('blinker')
 
-// window.onload = () => setInterval(() => blinkingCursor(), 520);
+window.onload = () => setInterval(() => blinkingCursor(), 520);
 
 function blinkingCursor() {
     if(!!blinker.textContent) { 
