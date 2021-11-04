@@ -103,14 +103,30 @@ nav {
 .card {
     background-color: rgb(9, 9, 103);
     color: rgb(255, 255, 255);
-  }
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    border: 5px solid blue;
+}
   
+.card img {
+    height: 75%;
+    width: 95%;
+    border: 3px solid blue;
+    margin: 5px;
+}
+
 .container {
-    padding: 2px 16px;
+    padding: 2px 16px;    
 }
 
 .container p {
     font-size: 18px;
+}
+
+.container a {
+    font-weight: 600;    
+    color: white;
 }
 
 #about-footer, #projects-footer {
