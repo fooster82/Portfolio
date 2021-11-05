@@ -47,6 +47,35 @@ nav {
     font-size: 23px;
 }
 
+footer {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    /* background-color: rgb(177, 179, 201); */
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;    
+    height: 8vh;
+    width: 100vw;
+}
+
+footer img {
+    height: 5.5vh;
+    width: 2.5vw;
+    position: relative;
+}
+
+footer img:hover {
+    border: 5px solid gold;
+    transition-duration: 0.5s;
+}
+
+footer img:not(:hover) {
+    border: 5px solid white;
+    transition-duration: 0.5s;
+}
+
 #index-text {
     flex-basis: 40%;
 }
@@ -54,16 +83,6 @@ nav {
 #blinker {
     color: rgb(255, 255, 255);
     flex-basis: 5%;  
-}
-
-#index-footer {
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(177, 179, 201);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
 }
 
 #about-header {
@@ -106,7 +125,17 @@ nav {
     margin: 0 10px;
     display: flex;
     align-items: center;
-    border: 5px solid blue;
+    border: 5px solid blue;    
+}
+
+.card:hover {
+    border-color: gold;
+    transition-duration: 0.5s;
+}
+
+.card:not(:hover) {
+    border-color: blue;
+    transition-duration: 0.3s;
 }
   
 .card img {
@@ -129,16 +158,4 @@ nav {
     color: white;
 }
 
-#about-footer, #projects-footer {
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(177, 179, 201);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    height: 10vh;
-    width: 100vw;
-}
 
