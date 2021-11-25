@@ -142,7 +142,7 @@ footer img:not(:hover) {
     border: 5px solid blue;    
 }
 
-.card:hover {
+/* .card:hover {
     border-color: gold;
     transition-duration: 0.5s;
 }
@@ -150,7 +150,7 @@ footer img:not(:hover) {
 .card:not(:hover) {
     border-color: blue;
     transition-duration: 0.3s;
-}
+} */
   
 .card img {
     height: 75%;
@@ -172,4 +172,20 @@ footer img:not(:hover) {
     color: white;
 }
 
+#item1, #item2 {
+    height: 30vh;
+}
 
+.project-image {
+
+}
+
+.project-repo:hover {
+    color: gold;
+    transition-duration: 0.3s;
+}
+
+.project-collab:hover {
+    color: gold;
+    transition-duration: 0.3s;
+}
