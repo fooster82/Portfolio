@@ -176,8 +176,9 @@ footer img:not(:hover) {
     height: 30vh;
 }
 
-.project-image {
-
+.project-image:hover {
+    border-color: gold;
+    transition-duration: 0.3s;
 }
 
 .project-repo:hover {
