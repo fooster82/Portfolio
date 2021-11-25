@@ -141,17 +141,7 @@ footer img:not(:hover) {
     align-items: center;
     border: 5px solid blue;    
 }
-
-/* .card:hover {
-    border-color: gold;
-    transition-duration: 0.5s;
-}
-
-.card:not(:hover) {
-    border-color: blue;
-    transition-duration: 0.3s;
-} */
-  
+ 
 .card img {
     height: 75%;
     width: 95%;
