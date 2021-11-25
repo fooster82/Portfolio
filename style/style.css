@@ -146,7 +146,7 @@ footer img:not(:hover) {
     height: 75%;
     width: 95%;
     border: 3px solid blue;
-    margin: 5px;
+    margin-left: 15px;
 }
 
 .container {
